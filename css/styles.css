@@ -192,11 +192,6 @@ footer {
         margin: 0;
     }
 
-    .logo,
-    .tera {
-        margin: 5px;
-        margin-top: 35px;
-    }
 
     .logo-menu {
         width: 230px;
@@ -213,8 +208,8 @@ footer {
     }
 
     .card-title {
-        width: 365px;
-        height: 285px;
+        width: 330px;
+        height: 330px;
     }
 
     .card-title p {
@@ -241,12 +236,6 @@ footer {
         margin: 0;
     }
 
-    .logo,
-    .tera {
-        margin: 5px;
-        margin-top: 45px;
-    }
-
     .logo-menu {
         width: 240px;
     }
@@ -262,8 +251,8 @@ footer {
     }
 
     .card-title {
-        width: 415px;
-        height: 300px;
+        width: 370px;
+        height: 370px;
     }
 
     .card-title p {
