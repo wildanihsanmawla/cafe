@@ -11,18 +11,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<style>
+    @media (max-width: 350px) {
+        .home {
+            left: 15px;
+        }
+    }
+
+    @media screen and (min-device-width: 351px) and (max-device-width: 420px) {
+        .home {
+            left: 70px;
+        }
+    }
+
+    @media screen and (min-device-width: 421px) and (max-device-width: 515px) { 
+        .home {
+            left: 120px;
+        }        
+    }
+</style>
+
 <body>
 
     <header>
+        <div class="grid-line"></div>
         <div class="header">
             <div class="logo">
                 <h1>TERAKOPIE&nbsp;</h1>
             </div>
-            <div class="vl"></div>
             <div class="tera">
                 <h1 style="font-size: 12px;">ESPRESSO <br> BASED</h1>
             </div>
-            <div class="home" style="left: 15px;">
+            <div class="home">
                 <a href="./index.html"><svg width="50" height="54" viewBox="0 0 50 54" fill="none"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="50" height="53.9735" fill="url(#pattern0_2_165)" />
