@@ -63,10 +63,8 @@ body {
 
 /*BODY IN*/
 main {
-    justify-content: center;
-    width: min-content;
     margin-top: 10px;
-    justify-self: center;
+    width: 100%;
 }
 
 .home {
