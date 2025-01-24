@@ -62,12 +62,6 @@ body {
 /*HEADER OUT*/
 
 /*BODY IN*/
-.container {
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-}
-
 main {
     justify-content: center;
     width: min-content;
@@ -80,6 +74,10 @@ main {
     position: relative;
     left: 30px;
     width: 0;
+}
+
+.content {
+    justify-self: center
 }
 
 
