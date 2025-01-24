@@ -62,8 +62,15 @@ html, body {
 /*HEADER OUT*/
 
 /*BODY IN*/
+.container {
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
 main {
     justify-content: center;
+    width: min-content;
     margin-top: 10px;
     justify-self: center;
 }
