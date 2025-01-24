@@ -158,11 +158,6 @@ footer {
         margin: 0;
     }
 
-    .vl {
-        margin-top: 45px;
-        height: 32px;
-    }
-
     .header {
         width: 100%;
         height: 120px;
@@ -214,6 +209,11 @@ footer {
 
     .card-title p {
         font-size: 25px;
+        margin-top: 25px;
+    }
+
+    .card {
+        margin-bottom: 10px;
     }
 
     .card-content-menu {
@@ -255,51 +255,13 @@ footer {
         height: 370px;
     }
 
-    .card-title p {
-        font-size: 25px;
-    }
-
-    .card-content-menu {
-        width: 415px;
-        height: 415px;
-    }
-
-    img {
-        width: 415px;
-    }
-
-    footer {
-        width: 100%;
-    }
-}
-
-@media screen and (min-device-width: 1792px) and (max-device-width: 1795px) {
-
-    * {
-        margin: 0;
-    }
-
-    .logo-menu {
-        width: 240px;
-    }
-
-    .logo h1,
-    .tera h1 {
-        font-size: 25px
-    }
-
-    .header {
-        width: 100%;
-        height: 120px;
-    }
-
-    .card-title {
-        width: 370px;
-        height: 370px;
+    .card {
+        margin-bottom: 10px;
     }
 
     .card-title p {
         font-size: 25px;
+        margin-top: 40px;
     }
 
     .card-content-menu {
