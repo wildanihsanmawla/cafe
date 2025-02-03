@@ -1,125 +1,325 @@
-html, body {
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Header */
+html,
+body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+/*HEADER IN*/
 .header {
     background-color: black;
     color: white;
-    padding: 20px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
     text-align: center;
 }
 
 .logo {
     display: flex;
-    justify-content: center;
+    justify-self: center
 }
 
 .logo img {
-    width: 150px;
+    align-self: center;
+    width: 200px;
     height: auto;
+    position: relative;
+    bottom: 75px;
 }
 
-/* Menu Section */
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-card {
-    justify-content: center;
-    align-items: center;
-    display: grid;
+.logo-menu {
+    font-family: "Faculty Glyphic", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 30px;
+    letter-spacing: 0.18em;
+    width: 225px;
+    justify-self: center;
+    color: #FFFFFF;
 }
 
 .menu {
     text-align: center;
     text-decoration: underline;
     font-family: 'Jura', sans-serif;
+    font-style: normal;
     font-size: 25px;
-    margin: 20px 0;
+    letter-spacing: 0.18em;
+    margin-bottom: 10px;
 }
 
+/*
+.gridline {
+    border-left: rgb(0, 217, 255) 1px solid;
+    height: 3310px;
+    left: 160px;
+    position: absolute;
+    z-index: 1;
+}
+*/
+/*HEADER OUT*/
+
+/*BODY IN*/
+main {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.home {
+    padding: 30px;
+    position: relative;
+    left: 30px;
+    width: 0;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 .card {
-    display: inline-block;
-    text-decoration: none;
-    margin: 10px;
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-img {
+    width: 150px;
 }
 
 .card-title {
     background-color: rgb(198, 198, 198);
-    width: 300px;
+    width: 318px;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 150px;
+    padding-left: 30px;
     font-size: 30px;
-    font-weight: bold;
-    color: white;
-    border-radius: 10px;
+    font-weight: 700;
+    line-height: 25px;
 }
 
 .card-title p {
-    margin: 0;
-    letter-spacing: 0.1em;
+    color: black;
+    letter-spacing: 0.10em;
 }
 
-/* Footer */
+
+
+/*BODY OUT*/
+
+/*MENU IN*/
+.card-content-menu {
+    background-color: rgb(234, 234, 234);
+    width: 275px;
+    height: 300px;
+    color: black;
+    border-radius: 20px;
+}
+
+.card-content-menu p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+.card-img-menu img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-title-menu {
+    padding: 10px;
+    justify-content: space-between;
+}
+
+/*MENU OUT*/
+
+/*FOOTER IN*/
 footer {
     background-color: black;
+    height: 250px;
     color: white;
-    padding: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    gap: 10%;
 }
 
 .footer-logo h1 {
     font-size: 25px;
-    margin: 0;
 }
 
-.footer-info p, .footer-info a {
+.social {
+    display: flex;
+}
+
+.footer-info a {
     color: white;
-    text-align: center;
-    margin: 5px 0;
-    font-size: 14px;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .card-title {
-        width: 250px;
-        height: 250px;
-        font-size: 24px;
-    }
-
-    .menu {
-        font-size: 20px;
-    }
+.footer-info p {
+    margin-left: 2px;
+    font-weight: 100;
 }
 
-@media (max-width: 480px) {
-    .logo img {
-        width: 120px;
+/*FOOTER OUT*/
+
+/*MEDIA IN*/
+@media (max-width: 350px) {
+
+    * {
+        margin: 0;
+    }
+
+    body,
+    html {
+        width: initial;
+    }
+
+    .header {
+        width: 100%;
+        height: 120px;
+    }
+
+    .card-img-menu img {
+        width: 275px;
+    }
+
+    .card {
+        margin-bottom: 10px;
     }
 
     .card-title {
-        width: 200px;
-        height: 200px;
-        font-size: 18px;
+        width: 280px;
+        height: 280px;
     }
 
-    .menu {
-        font-size: 18px;
+    .card-title p {
+        font-size: 25px;
     }
 
     footer {
-        text-align: center;
+        width: 100%;
     }
 }
+
+@media screen and (min-device-width: 351px) and (max-device-width: 420px) {
+
+    * {
+        margin: 0;
+    }
+
+    body,
+    html {
+        width: initial;
+    }
+
+    .logo-menu {
+        width: 230px;
+    }
+
+    .logo h1,
+    .tera h1 {
+        font-size: 25px
+    }
+
+
+    .header {
+        width: 100%;
+        height: 120px;
+    }
+
+    .card-title {
+        width: 330px;
+        height: 330px;
+    }
+
+    .card-title p {
+        font-size: 25px;
+        margin-top: 25px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .card-content-menu {
+        width: 325px;
+        height: 365px;
+    }
+
+    img {
+        width: 325px;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-device-width: 421px) and (max-device-width: 515px) {
+
+    * {
+        margin: 0;
+    }
+
+    body,
+    html {
+        width: initial;
+    }
+
+    .logo-menu {
+        width: 240px;
+    }
+
+    .logo h1,
+    .tera h1 {
+        font-size: 25px
+    }
+
+    .header {
+        width: 100%;
+        height: 120px;
+    }
+
+    .card-title {
+        width: 370px;
+        height: 370px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .card-title p {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    .card-content-menu {
+        width: 375px;
+        height: 415px;
+    }
+
+    img {
+        width: 375px;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+/*MEDIA OUT*/
