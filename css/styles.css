@@ -91,6 +91,13 @@ main {
     gap: 20px;
 }
 
+.content-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
     display: flex;
     justify-content: center;
@@ -129,6 +136,7 @@ main {
     height: 300px;
     color: black;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .card-content-menu p {
