@@ -129,6 +129,11 @@ main {
 /*BODY OUT*/
 
 /*MENU IN*/
+
+.content-menu {
+    margin-top: 45px;
+}
+
 .card-content-menu {
     background-color: rgb(234, 234, 234);
     width: 275px;
@@ -352,6 +357,135 @@ footer {
         margin: -25px;
         right: 0px;
         bottom: 120px;
+    }
+}
+
+@media screen and (min-device-width: 760px) and (max-device-width: 1050px) {
+    * {
+        margin: 0;
+    }
+
+    body,
+    html {
+        width: initial;
+    }
+
+    .content {
+        display: grid;
+    }
+
+    .logo-menu {
+        width: 240px;
+    }
+
+    .logo h1,
+    .tera h1 {
+        font-size: 25px
+    }
+
+    .header {
+        width: 100%;
+        height: 120px;
+    }
+
+    .card-title {
+        width: 370px;
+        height: 370px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .card-title p {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    .content-menu {
+        display: grid;
+    }
+
+    .card-content-menu {
+        width: 375px;
+        height: 415px;
+    }
+
+    img {
+        width: 375px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footer-info p {
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-device-width: 1060px) and (max-device-width: 1980px) {
+    * {
+        margin: 0;
+    }
+
+    body,
+    html {
+        width: initial;
+    }
+
+    .content {
+        display: grid;
+    }
+
+    .logo-menu {
+        width: 240px;
+    }
+
+    .logo h1,
+    .tera h1 {
+        font-size: 25px
+    }
+
+    .header {
+        width: 100%;
+        height: 120px;
+    }
+
+    .card-title {
+        width: 370px;
+        height: 370px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .card-title p {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    .content-menu {
+        display: grid;
+    }
+
+    .card-content-menu {
+        width: 375px;
+        height: 415px;
+    }
+
+    img {
+        width: 375px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footer-info p {
+        width: 300px;
     }
 }
 
